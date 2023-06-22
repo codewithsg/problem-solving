@@ -109,6 +109,5 @@ int main()
   push(s,99);
 
   displayStack(s);
-  printf("Hello World");
   return 0;
 }
