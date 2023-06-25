@@ -8,7 +8,7 @@ int rear = -1;
 
 int isFull()
 {
-  if (rear == SIZE - 1)
+  if (rear == SIZE - 1 || front == SIZE - 1)
     return 1;
   else
     return 0;
@@ -93,6 +93,8 @@ int main()
   queue(5);
   queue(7);
   queue(7);
+
+  displayQueue();
 
   printf("%d \n", dequeue());
   printf("%d \n", dequeue());
